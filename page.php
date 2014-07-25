@@ -10,7 +10,7 @@
  * @package wcmke
  */
 
- ?>
+get_header(); ?>
 
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
@@ -19,12 +19,12 @@
 
                 <article <?php post_class(); ?>>
                     <header class="entry-header">
-                        <h2 class="title page-title"></h2>
+                        <h2 class="title page-title"><?php the_title(); ?></h2>
                         
                     </header><!-- .entry-header -->
 
                     <div class="entry-content">
-                        
+                        <?php the_content(); ?>
                     </div><!-- .entry-content -->
                     
                     <footer class="entry-footer">
@@ -38,4 +38,4 @@
         </main><!-- #main -->
     </div><!-- #primary -->
     
-
+<?php get_footer(); ?>
