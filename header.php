@@ -28,8 +28,10 @@
         </div>
 
         <nav id="site-navigation" class="main-navigation" role="navigation">
-            <button class="menu-toggle"><?php _e( 'Primary Menu', 'wcmke' ); ?></button>
-            <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+            <?php wp_nav_menu( array(
+                'menu'       => 'main-nav',
+                'menu_class' => 'h-list'
+            ) ); ?>
         </nav><!-- #site-navigation -->
     </header><!-- #masthead -->
 
